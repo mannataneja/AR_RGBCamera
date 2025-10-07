@@ -6,16 +6,20 @@ public class ForceLoader : MonoBehaviour
     void Awake()
     {
         var settings = XRGeneralSettings.Instance.Manager;
-        var loader = ScriptableObject.CreateInstance<SimpleCameraLoader>();
+        var loader = ScriptableObject.CreateInstance<CameraLoader>();
 
         if (!settings.loaders.Contains(loader))
         {
             settings.loaders.Add(loader);
         }
 
-        settings.InitializeLoaderSync();
-        settings.StartSubsystems();
+        else
+        {
+            settings.InitializeLoaderSync();
+            settings.StartSubsystems();
 
-        Debug.Log("[ForceLoader] Mock camera loader started");
+            Debug.Log("[ForceLoader] Mock camera loader started");
+        }
+
     }
 }

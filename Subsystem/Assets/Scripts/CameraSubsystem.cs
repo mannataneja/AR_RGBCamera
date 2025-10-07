@@ -18,11 +18,11 @@ public sealed class CameraSubsystem : XRCameraSubsystem
 
         // Many samples provide a material; simple unlit is fine for a stub
         public override Material cameraMaterial =>
-            _material ?? (_material = new Material(Shader.Find("Unlit/Texture")));
+            _material != null ? _material : (_material = new Material(Shader.Find("Unlit/Texture")));
     }
 
     // Register a descriptor that points to your Provider
-    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    //[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
     static void Register()
     {
         var cinfo = new XRCameraSubsystemCinfo

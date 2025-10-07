@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.XR.ARSubsystems;
 using UnityEngine.XR.Management;
 
-public class SimpleCameraLoader : XRLoaderHelper
+public class CameraLoader : XRLoaderHelper
 {
     static readonly List<XRCameraSubsystemDescriptor> s_Descriptors = new List<XRCameraSubsystemDescriptor>();
 
