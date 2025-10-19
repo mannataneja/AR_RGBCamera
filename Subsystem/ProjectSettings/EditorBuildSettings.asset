@@ -11,6 +11,8 @@ EditorBuildSettings:
   m_configObjects:
     DiskCamera.DiskCameraSettings: {fileID: 11400000, guid: 5072928a1d8413a48830a3af812d6c73,
       type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: d9acf3296a8f10842b3592c0e5a06239,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 5ea511ad86bde4c40a059128dc874949,
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: b2ac673443afe444db6091cdb71fa66b,
